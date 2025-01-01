@@ -5,8 +5,13 @@ function Text(props: InputTextProp) {
   const { label, iconConfig, hintConfig, ...rest } = props
   const { padding, orientation, hint } = styleDerived(props)
   return (
-    <label className="flex flex-col gap-xs h-fit border-gry-200 text-sm">
-      <InputWrapper padding={padding} orientation={orientation} icon={iconConfig?.icon} {...rest} />
+    <label className={`flex flex-col gap-xs h-fit border-gry-200 outline-pur-700 text-sm text-black`}>
+      <InputWrapper
+        padding={padding}
+        orientation={orientation}
+        icon={iconConfig?.icon}
+        {...rest}
+      />
       {label && <Label label={label} hint={hint} hintText={hintConfig?.text} />}
     </label>
   )
@@ -14,7 +19,7 @@ function Text(props: InputTextProp) {
 
 function InputWrapper({ padding, orientation, icon, ...rest }: WrapperProps & InputTextProp) {
   return (
-    <div className="peer relative border border-inherit rounded-xs outline-hidden outline-offset-1 focus-within:outline-pur-700 has-invalid:focus-within:outline-tom-600 has-disabled:cursor-not-allowed overflow-hidden">
+    <div className="peer relative border border-inherit rounded-xs outline-hidden outline-offset-1 focus-within:outline-inherit has-invalid:focus-within:outline-tom-600 has-disabled:cursor-not-allowed overflow-hidden">
       <input
         className={`${padding} peer appearance-none w-full h-5x7 outline-none placeholder:text-black/25 placeholder:select-none disabled:text-black/25 disabled:cursor-not-allowed inset-shadow-hack inset-shadow-white`}
         {...rest}

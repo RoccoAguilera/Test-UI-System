@@ -30,14 +30,20 @@ function UI_Concept_2() {
           <div className="space-y-2.5">
             <InputCheck
               type="radio"
+              name="food"
+              defaultValue="hamburger"
               label="Hamburger"
             />
             <InputCheck
               type="radio"
+              name="food"
+              defaultValue="pizza"
               label="Pizza"
             />
             <InputCheck
               type="radio"
+              name="food"
+              defaultValue="hotdog"
               label="Hot dog"
             />
           </div>
