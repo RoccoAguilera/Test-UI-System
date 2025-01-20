@@ -1,4 +1,5 @@
-import ButtonBorder from "../../UI-System/buttons/Border"
+import ButtonBorder from "../../ui-system/buttons/Border"
+import ButtonEmpty from "../../ui-system/buttons/Empty"
 import Dots from "../../assets/Dots-vertical.svg?react"
 
 function UI_Concept_3() {
@@ -14,9 +15,9 @@ function UI_Concept_3() {
     <div className="@container border border-gry-200 rounded-lg">
       <div className="flex items-center p-5">
         <p className="flex-1 text-lg font-medium tracking-tighter">Friend request</p>
-        <span className="block size-5x7 content-center cursor-pointer">
+        <ButtonEmpty behavior="onlyIcon">
           <Dots className="mx-auto rotate-180" strokeWidth={1.5} />
-        </span>
+        </ButtonEmpty>
       </div>
       <div>
         {collectionObj && collectionObj.map(item => <Panel key={item.id} name={item.name} img={item.img} />)}

@@ -4,14 +4,14 @@ import InputSelect from "../../UI-System/inputs/Select"
 import ButtonFilled from "../../UI-System/buttons/Filled"
 import Selector from "../../assets/Selector.svg?react"
 
-function UI_Concept_1(props: { id: string}) {
+function UI_Concept_1(props: { id: string }) {
   return (
     <div className="col-span-3 p-5 border border-gry-200 rounded-lg space-y-3">
       <div className="mt-2.5 text-sm">
         <h3 className="text-2xl font-bold tracking-tighter">Book of memories</h3>
         <p className="text-gry-900">Record some notes as a souvenir or dreams.</p>
       </div>
-      <form className="space-y-3" id={props.id} onInvalid={ e => console.log(e) }>
+      <form className="space-y-3" id={props.id} onInvalid={e => console.log(e)}>
         <InputText
           type="text"
           defaultValue="My favorite food"

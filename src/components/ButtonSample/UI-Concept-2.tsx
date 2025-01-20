@@ -1,5 +1,6 @@
-import ButtonBorder from "../../UI-System/buttons/Border"
-import ButtonAction from "../../UI-System/buttons/Action"
+import ButtonBorder from "../../ui-system/buttons/Border"
+import ButtonAction from "../../ui-system/buttons/Action"
+import ButtonEmpty from "../../ui-system/buttons/Empty"
 import Plus from "../../assets/Plus.svg?react"
 import Settings from "../../assets/Settings.svg?react"
 import Search from "../../assets/Search.svg?react"
@@ -20,13 +21,13 @@ function UI_Concept_2() {
         </div>
       </div>
       <div className="flex-1 flex items-center justify-center gap-4">
-        <span className="block size-5x7 content-center cursor-pointer">
+        <ButtonEmpty behavior="onlyIcon">
           <Arrow className="mx-auto rotate-180" strokeWidth={1.5} />
-        </span>
+        </ButtonEmpty>
         <span className="tracking-tighter text-nowrap">January 1, 2024</span>
-        <span className="block size-5x7 content-center cursor-pointer">
+        <ButtonEmpty behavior="onlyIcon">
           <Arrow className="mx-auto" strokeWidth={1.5} />
-        </span>
+        </ButtonEmpty>
       </div>
       <div className="flex gap-xs">
         <div className="@min-sm:hidden">

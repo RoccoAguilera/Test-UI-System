@@ -1,8 +1,9 @@
 import InputText from "../../UI-System/inputs/Text"
 import InputTextArea from "../../UI-System/inputs/Textarea"
 import InputSelect from "../../UI-System/inputs/Select"
-import ButtonBorder from "../../UI-System/buttons/Border"
-import ButtonAction from "../../UI-System/buttons/Action"
+import ButtonBorder from "../../ui-system/buttons/Border"
+import ButtonAction from "../../ui-system/buttons/Action"
+import ButtonEmpty from "../../ui-system/buttons/Empty"
 import Arrow from "../../assets/Chevron-right.svg?react"
 import Dots from "../../assets/Dots-vertical.svg?react"
 import Camera from "../../assets/Camera-plus.svg?react"
@@ -14,9 +15,11 @@ function UI_Concept_5() {
     <div className="flex border border-gry-200 rounded-lg @max-[430px]:flex-col">
       <div className="flex-none flex flex-col border-r border-gry-100 @max-[430px]:border-b @max-[430px]:border-r-transparent">
         <div className="p-xs">
-          <span className="block size-5x7 ml-auto content-center cursor-pointer">
-            <Dots className="mx-auto rotate-180" strokeWidth={1.5} />
-          </span>
+          <div className="w-fit ml-auto">
+            <ButtonEmpty behavior="onlyIcon">
+              <Dots className="mx-auto rotate-180" strokeWidth={1.5} />
+            </ButtonEmpty>
+          </div>
         </div>
         <img className="flex-1 object-contain @max-[430px]:max-h-50 @max-[430px]:w-full" src="/image/Cover C.avif" alt="image" width={200} height={200} />
         <div className="px-xs pb-2.5">
