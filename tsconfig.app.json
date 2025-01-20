@@ -26,5 +26,8 @@
   },
   "include": [
     "src",
+    "src/UI-System/@types/type-inputs.ts",
+    "src/UI-System/@utils/util-inputs.ts",
+    "src/UI-System/@types/type-button.ts"
   ]
 }

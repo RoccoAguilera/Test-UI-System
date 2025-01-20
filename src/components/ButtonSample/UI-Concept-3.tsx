@@ -1,5 +1,5 @@
-import ButtonBorder from "../../ui-system/buttons/Border"
-import ButtonEmpty from "../../ui-system/buttons/Empty"
+import ButtonBorder from "../../UI-System/buttons/Border"
+import ButtonEmpty from "../../UI-System/buttons/Empty"
 import Dots from "../../assets/Dots-vertical.svg?react"
 
 function UI_Concept_3() {

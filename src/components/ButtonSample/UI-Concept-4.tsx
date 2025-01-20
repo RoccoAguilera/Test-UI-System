@@ -1,4 +1,4 @@
-import ButtonFilled from "../../ui-system/buttons/Filled"
+import ButtonFilled from "../../UI-System/buttons/Filled"
 
 function UI_Concept_4() {
   return (
